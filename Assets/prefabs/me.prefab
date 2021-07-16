@@ -203,7 +203,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   speed: 350
-  jumpforce: 1000
+  jumpforce: 900
   cherry: 0
   diamond: 0
   score: 0

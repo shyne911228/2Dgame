@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\code\AIfrog.cs" />
+     <Compile Include="Assets\code\NextScene.cs" />
      <Compile Include="Assets\code\codes.cs" />
      <Compile Include="Assets\code\eaglemove.cs" />
      <Compile Include="Assets\code\enemy.cs" />
@@ -225,6 +226,12 @@
     </Reference>
     <Reference Include="UnityEditor">
         <HintPath>D:/unity/2019.4.28f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+        <HintPath>D:/unity/2019.4.28f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+        <HintPath>D:/unity/2019.4.28f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>D:/unity/2019.4.28f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
