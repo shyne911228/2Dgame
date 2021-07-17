@@ -42,6 +42,7 @@
      <Compile Include="Assets\code\eaglemove.cs" />
      <Compile Include="Assets\code\enemy.cs" />
      <Compile Include="Assets\code\enter.cs" />
+     <Compile Include="Assets\code\mouseMove.cs" />
      <Compile Include="Assets\code\playerCamera.cs" />
      <None Include="Assets\CasualGameBGM05\ReadMe.txt" />
     <Reference Include="UnityEngine">
