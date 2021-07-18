@@ -64,25 +64,5 @@ public class mouseMove : enemy
             }
         }
     }
-    /*void faceforward()
-    {
-        if(face)
-        {
-            if(transform.position.x<leftf)
-            {
-                transform.localScale=new Vector3(-1,1,1);
-                face=false;
-            }
-        }
-        else
-        {
-            if(transform.position.x>rightf)
-            {
-                transform.localScale=new Vector3(1,1,1);
-                face=true;
-            }
-        }
-    }
 
-    */
 }
