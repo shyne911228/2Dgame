@@ -7,9 +7,9 @@ public class codes : MonoBehaviour  //public class = 檔案名
 {
     private Rigidbody2D rb;//鋼體(me)
     private Animator an;//動畫(me)
-    public Collider2D co;//碰撞體(me)
-    public Collider2D cco;
-    public Transform celling;
+    public Collider2D co;//碰撞體(腳)
+    public Collider2D cco;//碰撞體(頭)
+    public Transform celling;//天花板
     public LayerMask ground;//地板(tilemap)
     public float speed; //跑步速度(me)
     public float jumpforce;//跳躍力(me)
@@ -31,6 +31,12 @@ public class codes : MonoBehaviour  //public class = 檔案名
     }
 
     // Update is called once per frame
+    private void Update() 
+    {
+        Crouch();
+        jump();
+        scorenum.text=score.ToString();
+    }
     void FixedUpdate()
     {
         if(!ishurt)
@@ -63,6 +69,19 @@ public class codes : MonoBehaviour  //public class = 檔案名
        
 
     }
+    void jump()
+    {
+        if (Input.GetButton("Jump"))//角色跳躍
+        {
+            if (co.IsTouchingLayers(ground))
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpforce * Time.fixedDeltaTime);
+                au.Play();
+                an.SetBool("jumping", true);
+            }
+            
+        }
+    }
     void Movement()//移動製作
     {
         float move = Input.GetAxis("Horizontal");//左右移動速率
@@ -77,21 +96,10 @@ public class codes : MonoBehaviour  //public class = 檔案名
         {
             transform.localScale = new Vector3(directionX, 1, 1);
         }
-        if (Input.GetButtonDown("Jump"))//角色跳躍
-        {
-            if (co.IsTouchingLayers(ground))
-            {
-                rb.velocity = new Vector2(rb.velocity.x, jumpforce * Time.fixedDeltaTime);
-                au.Play();
-                an.SetBool("jumping", true);
-            }
-            
-        }
-        Crouch();
     }
     void swichan()//動畫製作
     {
-        an.SetBool("idle", false);    //先將站立定義為否
+        //an.SetBool("idle", false);    //先將站立定義為否
         if( rb.velocity.y <0.1f && !co.IsTouchingLayers(ground))
         {
             an.SetBool("downing",true);//自由落體
@@ -112,14 +120,14 @@ public class codes : MonoBehaviour  //public class = 檔案名
             if(Mathf.Abs(rb.velocity.x)<0.1f)
             {
                 an.SetBool("hurt",false);
-                an.SetBool("idle",true);
+            //    an.SetBool("idle",true);
                 ishurt=false;
             }
         }
         else if (co.IsTouchingLayers(ground))//是否碰觸到指定物ground
         {
             an.SetBool("downing", false);//將落下定義為否
-            an.SetBool("idle", true);//將站立定義為是
+         //    an.SetBool("idle", true);//將站立定義為是
         }
     }
     private void OnTriggerEnter2D(Collider2D other) //碰觸器
@@ -134,20 +142,18 @@ public class codes : MonoBehaviour  //public class = 檔案名
             if(other.tag=="cherry")
             {
                 auc.Play();
-                Destroy(other.gameObject);
-                cherry+=1;
-                score+=120;
+                other.GetComponent<Animator>().Play("gotten");
+                
             }else if(other.tag=="diamond") 
             {
                 auc.Play();
-                Destroy(other.gameObject);
-                diamond+=1;
-                score+=500;
+                other.GetComponent<Animator>().Play("gotten");   
             } 
-            scorenum.text=score.ToString();
+            
         }
         
     }
+
     private void OnCollisionEnter2D(Collision2D other) //消滅敵人
     {
         if(other.gameObject.tag=="enemy")
@@ -177,7 +183,16 @@ public class codes : MonoBehaviour  //public class = 檔案名
     }
 
     
-
+    public void cherrycount()
+    {
+        cherry+=1;
+        score+=120;
+    }
+    public void diamondcount()
+    {
+        diamond+=1;
+        score+=500;
+    }
 
 
 

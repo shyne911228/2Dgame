@@ -14,8 +14,8 @@ public class enemy : MonoBehaviour
     }
     public void dead()
     {
+        GetComponent<Collider2D>().enabled=false;
         Destroy(gameObject);
-        
     }
     public void jumpon()
     {

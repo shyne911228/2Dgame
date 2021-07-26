@@ -9,6 +9,7 @@ TagManager:
   - stuff
   - enemy
   - die
+  - press
   layers:
   - Default
   - TransparentFX
