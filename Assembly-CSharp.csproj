@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\code\AIeagle.cs" />
      <Compile Include="Assets\code\NextScene.cs" />
      <Compile Include="Assets\code\UIpress.cs" />
      <Compile Include="Assets\code\area.cs" />
@@ -45,6 +46,7 @@
      <Compile Include="Assets\code\diamond.cs" />
      <Compile Include="Assets\code\eaglemove.cs" />
      <Compile Include="Assets\code\enemy.cs" />
+     <Compile Include="Assets\code\enemyai.cs" />
      <Compile Include="Assets\code\enter.cs" />
      <Compile Include="Assets\code\frogmove.cs" />
      <Compile Include="Assets\code\mouseMove.cs" />
@@ -253,6 +255,9 @@
     </Reference>
     <Reference Include="UnityEditor">
         <HintPath>D:/unity/2019.4.28f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>D:/unity/2D game/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>D:/unity/2019.4.28f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -730,6 +735,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{19f4a7d9-7514-deee-d499-a035775e3289}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{7e8b6092-764b-b6f9-88da-a87a4734739d}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{dc9a7194-45ba-6c7c-b18f-8f5a6308886b}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
