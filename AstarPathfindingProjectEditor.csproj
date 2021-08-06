@@ -36,27 +36,27 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AstarPathfindingProject\Editor\AIBaseEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\AILerpEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\AnimationLinkEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\AstarUpdateWindow.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\Legacy\LegacyAIPathEditor2.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\Legacy\LegacyEditorHelper2.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\Editor\SeekerEditor.cs" />
-     <None Include="Assets\AstarPathfindingProject\Editor\AstarPathfindingProjectEditor.asmdef" />
-     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
-     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
-     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+     <Compile Include="Assets\Pathfinding\Editor\AIBaseEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\AILerpEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\AnimationLinkEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\AstarPathEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\AstarUpdateChecker.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\AstarUpdateWindow.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\CustomGraphEditorAttribute.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\GraphEditors\GraphEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\GraphEditors\GridGeneratorEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\GraphEditors\PointGeneratorEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\GraphUpdateSceneEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\Legacy\LegacyAIPathEditor2.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\Legacy\LegacyEditorHelper2.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\ModifierEditors\RaycastModifierEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\ModifierEditors\SmoothModifierEditor.cs" />
+     <Compile Include="Assets\Pathfinding\Editor\SeekerEditor.cs" />
+     <None Include="Assets\Pathfinding\Editor\AstarPathfindingProjectEditor.asmdef" />
+     <None Include="Assets\Pathfinding\Editor\EditorAssets\Materials\Navmesh.cginc" />
+     <None Include="Assets\Pathfinding\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
+     <None Include="Assets\Pathfinding\Editor\EditorAssets\Materials\Navmesh.shader" />
     <Reference Include="UnityEngine">
         <HintPath>D:/unity/2019.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -259,7 +259,7 @@
         <HintPath>D:/unity/2D game/Library/PackageCache/com.unity.render-pipelines.core@7.6.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-        <HintPath>D:/unity/2D game/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+        <HintPath>D:/unity/2D game/Assets/Pathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>D:/unity/2D game/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

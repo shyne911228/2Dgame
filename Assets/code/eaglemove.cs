@@ -5,6 +5,8 @@ using Pathfinding;
 
 public class eaglemove : enemy
 {
+    
+    
     private Rigidbody2D rb;
     //private Collider2D co;
     //public Transform top,button;
@@ -29,21 +31,10 @@ public class eaglemove : enemy
     // Update is called once per frame
     void Update()
     {
-        //move();
+        
         aimove();
     }
-  /*  void move()
-    {          
-        if(transform.position.y<buttone)
-        {
-            rb.velocity=new Vector2(transform.position.x,Speed);
-            
-        }
-        else if(transform.position.y>tope)
-        {
-            rb.velocity=new Vector2(transform.position.x,-Speed);
-        } 
-    }*/
+
     void aimove()
     {
         if(AI.desiredVelocity.x>=0.01f)
@@ -55,4 +46,5 @@ public class eaglemove : enemy
             transform.localScale=new Vector3(1f,1f,1f);
         }
     }
+
 }

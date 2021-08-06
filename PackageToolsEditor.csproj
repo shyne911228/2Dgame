@@ -36,10 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AstarPathfindingProject\PackageTools\Editor\EditorBase.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\PackageTools\Editor\EditorGUIx.cs" />
-     <Compile Include="Assets\AstarPathfindingProject\PackageTools\Editor\EnumFlagDrawer.cs" />
-     <None Include="Assets\AstarPathfindingProject\PackageTools\Editor\PackageToolsEditor.asmdef" />
+     <Compile Include="Assets\Pathfinding\PackageTools\Editor\EditorBase.cs" />
+     <Compile Include="Assets\Pathfinding\PackageTools\Editor\EditorGUIx.cs" />
+     <Compile Include="Assets\Pathfinding\PackageTools\Editor\EnumFlagDrawer.cs" />
+     <None Include="Assets\Pathfinding\PackageTools\Editor\PackageToolsEditor.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/unity/2019.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -242,7 +242,7 @@
         <HintPath>D:/unity/2D game/Library/PackageCache/com.unity.render-pipelines.core@7.6.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-        <HintPath>D:/unity/2D game/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+        <HintPath>D:/unity/2D game/Assets/Pathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>D:/unity/2D game/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
