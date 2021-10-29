@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\code\AIeagle.cs" />
+     <Compile Include="Assets\code\BackScene.cs" />
      <Compile Include="Assets\code\NextScene.cs" />
      <Compile Include="Assets\code\UIpress.cs" />
      <Compile Include="Assets\code\area.cs" />
